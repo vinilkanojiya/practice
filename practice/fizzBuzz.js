@@ -1,8 +1,9 @@
 var output = [];
-var num ;
+var num = 0;
 
 
-function fizzbuzz(){
+function fizzbuzz()
+{
     
 num++;
     
@@ -10,27 +11,18 @@ num++;
     {
         output.push('fizzbuzz');
     }
-    else
+   else if(num%3==0)
     {
-        if(num%3==0)
-        {
             output.push('fizz');
-        }
-        else
-        {
-            if(num%5==0)
-            {
-                output.push('buzz');
-            }
-            else
-            {
-                 output.push(num);   
-            }
-                
-        }
-        
     }
-        
-            console.log(output);
+    else if(num%5==0)
+     {
+                output.push('buzz');
+     }
+      else
+      {
+            output.push(num);   
+      }
+ console.log(output);
     
 }
